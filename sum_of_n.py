@@ -3,14 +3,12 @@ def sum_of_n(n):
 	if n>0:
 		count=0
 		while count!=n:
-			count=count+1
+			count += 1
 			array.append((array[count-1]+count))
 		return array
 	if n<0:
 		count=0
 		while count!=n:
-			count=count-1
+			count -= 1
 			array.append((array[count+1]+count))
-		return array
-	else:
-		return array
+	return array
